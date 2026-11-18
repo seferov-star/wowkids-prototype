@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fffdfa" />
+    <title>WowKids — магазин творчества</title>
+    <link rel="icon" href="assets/wowkids.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shop.css" />
+    <script defer src="products.js"></script>
+    <script defer src="shop.js"></script>
+    <script defer src="home.js"></script>
+  </head>
+  <body>
+    <a
+      href="#app"
+      class="skip"
+      onclick="
+        event.preventDefault();
+        document.getElementById('app').focus();
+      "
+      >К содержимому</a
+    >
+    <header class="wk-head">
+      <div class="wk-bar">
+        <a class="wk-brand" href="#/" aria-label="WowKids — главная"
+          ><img src="assets/wowkids.png" width="157" height="30" alt="WowKids"
+        /></a>
+        <nav class="wk-nav" aria-label="Основная навигация">
+          <details id="nav-catalog">
+            <summary>Каталог <span aria-hidden="true">⌄</span></summary>
+            <div id="nav-links"></div>
+          </details>
+          <a href="#/activities">Чем заняться</a>
+          <a href="#/about">О WowKids</a>
+        </nav>
+        <a class="wk-cart" href="#/cart"
+          ><span class="bag-icon" aria-hidden="true"></span
+          ><span class="cart-label">Корзина</span
+          ><span data-cart-count>0</span></a
+        >
+      </div>
+    </header>
+    <main id="app" tabindex="-1"></main>
+    <footer class="wk-footer">
+      <a class="wk-brand" href="#/"
+        ><img
+          src="assets/wowkids.png"
+          width="132"
+          height="25"
+          alt="WowKids — главная"
+      /></a>
+      <nav aria-label="Внизу страницы">
+        <a href="#/catalog">Все товары</a><a href="#/about">О марке</a
+        ><a href="#/cart">Корзина</a>
+      </nav>
+      <small>Демонстрационный магазин</small>
+    </footer>
+  </body>
+</html>
